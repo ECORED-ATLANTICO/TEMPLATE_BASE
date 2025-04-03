@@ -1,8 +1,8 @@
 export default {
   global: {
-    componenteFormativo: 'NOMBRE DEL COMPONENTE FORMATIVO',
-    descripcionCurso: 'BREVE DESCRIPCIÓN',
-    imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
+    Name: 'Nombre del recurso educativo',
+    Description: 'Descripción del RED',
+    imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
       {
@@ -31,12 +31,12 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Tema 1',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Titulo de segundo nivel',
+            titulo: 'Subtema 1',
             hash: 't_1_1',
           },
         ],
@@ -45,13 +45,13 @@ export default {
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Tema 2',
         desarrolloContenidos: true,
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Tema 3',
         desarrolloContenidos: true,
       },
     ],
@@ -86,7 +86,7 @@ export default {
       {
         icono: 'fas fa-file-pdf',
         titulo: 'Descargar PDF',
-        download: 'downloads/prueba.pdf',
+        download: 'downloads/dist.pdf',
       },
       {
         icono: 'fas fa-download',
@@ -104,8 +104,8 @@ export default {
     {
       tema: '',
       referencia: '',
-      tipo: '',
-      link: 'https://www.google.com/',
+      tipo: 'Sitio web',
+      link: '',
     },
     {
       tema: '',
@@ -117,10 +117,6 @@ export default {
   glosario: [
     {
       termino: 'Término',
-      significado: 'Texto de la definición',
-    },
-    {
-      termino: '<em>Término con extranjerismo</em>',
       significado: 'Definición',
     },
   ],
@@ -135,14 +131,14 @@ export default {
       titulo: 'ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Milady Tatiana Villamil Castellanos',
+          nombre: 'Nombre completo',
           cargo: 'Responsable del ecosistema',
           centro: 'Dirección General',
         },
         {
-          nombre: 'Olga Constanza Bermúdez Jaimes',
+          nombre: 'Nombre completo',
           cargo: 'Responsable de línea de producción',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+          centro: 'Centro XYZ - Regional XYZ',
         },
       ],
     },
@@ -152,7 +148,7 @@ export default {
         {
           nombre: 'Nombre responsable',
           cargo: 'Nombre del rol',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+          centro: 'Centro XYZ - Regional XYZ',
         },
       ],
     },
@@ -162,17 +158,17 @@ export default {
         {
           nombre: 'Nombre responsable',
           cargo: 'Diseñador de contenidos',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+          centro: 'Centro XYZ - Regional XYZ',
         },
         {
           nombre: 'Nombre responsable',
           cargo: 'Desarrollador <i>full stack</i>',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+          centro: 'Centro XYZ - Regional XYZ',
         },
         {
-          nombre: 'Nombre',
+          nombre: 'Nombre responsable',
           cargo: 'Animador y productor audiovisual',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+          centro: 'Centro XYZ - Regional XYZ',
         },
       ],
     },
@@ -180,24 +176,14 @@ export default {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
         {
-          nombre: 'Luis Gabriel Urueta Alvarez',
+          nombre: 'Nombre responsable',
           cargo: 'Validador y vinculador de recursos educativos digitales',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+          centro: 'Centro XYZ - Regional XYZ',
         },
         {
-          nombre: 'Jaime Hernán Tejada Llano',
-          cargo: 'Validador y vinculador de recursos educativos digitales',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
-        },
-        {
-          nombre: 'Daniel Ricardo Mutis Gómez',
+          nombre: 'Nombre responsable',
           cargo: 'Evaluador de contenidos inclusivos y accesibles',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
-        },
-        {
-          nombre: 'Margarita Marcela Medrano Gómez',
-          cargo: 'Evaluador de contenidos inclusivos y accesibles',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+          centro: 'Centro XYZ - Regional XYZ',
         },
       ],
     },
@@ -208,25 +194,4 @@ export default {
     creativeCommons:
       'Licencia creative commons CC BY-NC-SA<br><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank">ver licencia</a>',
   },
-  // creditosInicio: [
-  //   {
-  //     titulo: 'En alianza',
-  //     contenido: [
-  //       require('@/assets/template/logo-sena-naranja.svg'),
-  //       require('@/assets/template/mintic.jpg'),
-  //       require('@/assets/template/minsalud.jpg'),
-  //     ],
-  //   },
-  //   {
-  //     titulo: 'En compañía',
-  //     contenido: [
-  //       require('@/assets/template/presidencia.jpg'),
-  //       require('@/assets/template/ecopetrol.jpg'),
-  //     ],
-  //   },
-  //   {
-  //     titulo: 'Una iniciativa',
-  //     contenido: [require('@/assets/template/santander.jpg')],
-  //   },
-  // ],
 }

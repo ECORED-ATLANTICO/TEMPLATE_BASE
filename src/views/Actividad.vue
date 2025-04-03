@@ -9,14 +9,20 @@
   </template>
 
 <script>
+import Actividad from 'ecored-pkg-fliz/plugin/components/actividad/Actividad.vue'
 export default {
   name: 'ActividadDidactica',
+  components: {
+    Actividad,
+  },
   data: () => ({
     cuestionario: {
       tema: 'Nombre del componente formativo',
       titulo: 'Cuestionario',
       introduccion: '<b> Objetivo:</b> Texto de Word',
       barajarPreguntas: true,
+      titulo_aprobado: 'Buen trabajo',
+      titulo_reprobado: 'Vuelva a intentarlo',
       preguntas: [
         {
           id: 1,
